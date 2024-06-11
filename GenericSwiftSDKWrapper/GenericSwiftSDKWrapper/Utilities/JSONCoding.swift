@@ -102,3 +102,21 @@ extension UnkeyedDecodingContainer {
         return try nestedContainer.decode(type)
     }
 }
+
+let defaultJSONEncoder: JSONEncoder = {
+    let encoder = JSONEncoder()
+    encoder.dateEncodingStrategy = .formatted(defaultIsoDateFormatter)
+    if #available(macOS 10.13, iOS 11.0, tvOS 11.0, *) {
+        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+    } else {
+        encoder.outputFormatting = .prettyPrinted
+    }
+    return encoder
+}()
+
+let defaultJSONDecoder: JSONDecoder = {
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .formatted(defaultIsoDateFormatter)
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    return decoder
+}()

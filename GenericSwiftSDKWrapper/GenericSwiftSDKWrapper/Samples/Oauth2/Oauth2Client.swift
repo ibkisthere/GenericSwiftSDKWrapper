@@ -6,17 +6,48 @@
 //
 
 import Foundation
+import SwiftUI
+import OAuthSwift
 
-// we will use the OauthSwift package / google sign in to get the token
+struct OAuthView: View {
+    @State private var isAuthorized = false
+    let oauthswift = OAuth2Swift(
+        consumerKey: "YOUR_CLIENT_ID",
+        consumerSecret: "YOUR_CLIENT_SECRET",
+        authorizeUrl: "AUTHORIZATION_SERVER_URL",
+        accessTokenUrl: "TOKEN_SERVER_URL",
+        responseType: "code"
+    )
+    
+    var body: some View {
+        VStack {
+            if isAuthorized {
+                Text("You are authorized!")
+            } else {
+                Button(action: {
+                    self.oauthswift.authorizeURLHandler = SafariURLHandler(viewController: UIApplication.shared.windows.first!.rootViewController!)
+                    let _ = self.oauthswift.authorize(
+                        withCallbackURL: URL(string: "YOUR_CALLBACK_URL")!,
+                        scope: "SCOPE",
+                        state: "STATE",
+                        success: { credential, response, parameters in
+                            self.isAuthorized = true
+                        },
+                        failure: { error in
+                            print(error.localizedDescription)
+                        }
+                    )
+                }) {
+                    Text("Authenticate")
+                }
+            }
+        }
+    }
+}
 
-// then feed it into our SDK to use for authentication
-
-// this file is just to write notes
-
-// we will import the OauthSwift SDK then use it for the sample Apps
-
-
-// okta is just for auth, now for endpoints we use the spotify for refernces
-
-
+struct OauthView_Previews: PreviewProvider {
+    static var previews: some View {
+        OAuthView()
+    }
+}
 

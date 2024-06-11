@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AFF473537AE38B92D0B82BD /* Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486DD597D9D3C92909500334 /* Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework */; };
 		4E36F7F52C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36F7F42C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift */; };
 		4E36F7F72C128CE3005EE976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36F7F62C128CE3005EE976 /* ContentView.swift */; };
 		4E36F7F92C128CE5005EE976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E36F7F82C128CE5005EE976 /* Assets.xcassets */; };
@@ -26,8 +27,6 @@
 		4E5FB0292C171E73004766B8 /* KeyChainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0282C171E73004766B8 /* KeyChainProtocol.swift */; };
 		4E5FB02B2C171E81004766B8 /* KeyChain+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB02A2C171E81004766B8 /* KeyChain+Extensions.swift */; };
 		4E5FB0302C172016004766B8 /* Oauth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB02F2C172016004766B8 /* Oauth2Client.swift */; };
-		4E5FB0342C1720A2004766B8 /* KeychainTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */; };
-		4E5FB0382C1721C5004766B8 /* UserDefaultsTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */; };
 		4E5FB0432C17AE09004766B8 /* JSONCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0422C17AE09004766B8 /* JSONCoding.swift */; };
 		4E5FB0452C17AE16004766B8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0442C17AE16004766B8 /* JSONDecodable.swift */; };
 		4E5FB0472C17AE42004766B8 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0462C17AE42004766B8 /* JSONValue.swift */; };
@@ -43,6 +42,28 @@
 		4E5FB05E2C17C37F004766B8 /* GenericLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB05D2C17C37F004766B8 /* GenericLogManager.swift */; };
 		4E5FB0602C17EAB0004766B8 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB05F2C17EAB0004766B8 /* EndpointProvider.swift */; };
 		4E5FB0622C17F48A004766B8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0612C17F48A004766B8 /* String+Extensions.swift */; };
+		4E5FB0642C17F8B5004766B8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4E5FB0632C17F8B4004766B8 /* Podfile */; };
+		4E5FB06B2C180E5C004766B8 /* Reqres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB06A2C180E5C004766B8 /* Reqres.swift */; };
+		4E5FB0942C182162004766B8 /* CredentialError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0872C182160004766B8 /* CredentialError.swift */; };
+		4E5FB0952C182162004766B8 /* CredentialSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0882C182160004766B8 /* CredentialSecurity.swift */; };
+		4E5FB0962C182162004766B8 /* CredentialCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08A2C182160004766B8 /* CredentialCoordinatorImpl.swift */; };
+		4E5FB0972C182162004766B8 /* CredentialSecurity+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08B2C182160004766B8 /* CredentialSecurity+Internal.swift */; };
+		4E5FB0982C182162004766B8 /* DefaultCredentialDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08C2C182160004766B8 /* DefaultCredentialDataSource.swift */; };
+		4E5FB0992C182162004766B8 /* Credential+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08D2C182160004766B8 /* Credential+Internal.swift */; };
+		4E5FB09A2C182162004766B8 /* CredentialDataSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08E2C182161004766B8 /* CredentialDataSource+Extensions.swift */; };
+		4E5FB09B2C182162004766B8 /* CredentialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB08F2C182161004766B8 /* CredentialCoordinator.swift */; };
+		4E5FB09C2C182162004766B8 /* CredentialDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0902C182161004766B8 /* CredentialDataSource.swift */; };
+		4E5FB09D2C182162004766B8 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0912C182161004766B8 /* Credential.swift */; };
+		4E5FB09E2C182162004766B8 /* CredentialDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0922C182162004766B8 /* CredentialDataSourceDelegate.swift */; };
+		4E5FB09F2C182162004766B8 /* Credential+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0932C182162004766B8 /* Credential+Extensions.swift */; };
+		4E5FB0A12C1822AE004766B8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0A02C1822AE004766B8 /* README.md */; };
+		4E5FB0A42C182393004766B8 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0A32C182393004766B8 /* Version.swift */; };
+		4E5FB0A62C18244E004766B8 /* Reqres+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0A52C18244E004766B8 /* Reqres+Auth.swift */; };
+		4E5FB0A82C18253A004766B8 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0A72C18253A004766B8 /* URLRequest+Extensions.swift */; };
+		4E5FB0AA2C182657004766B8 /* APIClient+Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0A92C182657004766B8 /* APIClient+Requests.swift */; };
+		4E5FB0AC2C182A18004766B8 /* APIClient+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0AB2C182A18004766B8 /* APIClient+Operations.swift */; };
+		7ADE84D50936DC2DB981AA95 /* Pods_GenericSwiftSDKWrapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4AE2451AA644135BA3357C /* Pods_GenericSwiftSDKWrapperTests.framework */; };
+		F23F44B307D1143D3A686430 /* Pods_GenericSwiftSDKWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DCCF3AA13545AF5329B20A /* Pods_GenericSwiftSDKWrapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +84,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28DCCF3AA13545AF5329B20A /* Pods_GenericSwiftSDKWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericSwiftSDKWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		447B81CA68B7F91B4D29EA6B /* Pods-GenericSwiftSDKWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapper.debug.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapper/Pods-GenericSwiftSDKWrapper.debug.xcconfig"; sourceTree = "<group>"; };
+		486DD597D9D3C92909500334 /* Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E36F7F12C128CE3005EE976 /* GenericSwiftSDKWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericSwiftSDKWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E36F7F42C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSwiftSDKWrapperApp.swift; sourceTree = "<group>"; };
 		4E36F7F62C128CE3005EE976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,8 +109,6 @@
 		4E5FB0282C171E73004766B8 /* KeyChainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainProtocol.swift; sourceTree = "<group>"; };
 		4E5FB02A2C171E81004766B8 /* KeyChain+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyChain+Extensions.swift"; sourceTree = "<group>"; };
 		4E5FB02F2C172016004766B8 /* Oauth2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth2Client.swift; sourceTree = "<group>"; };
-		4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStorage.swift; sourceTree = "<group>"; };
-		4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTokenStorage.swift; sourceTree = "<group>"; };
 		4E5FB0422C17AE09004766B8 /* JSONCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCoding.swift; sourceTree = "<group>"; };
 		4E5FB0442C17AE16004766B8 /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		4E5FB0462C17AE42004766B8 /* JSONValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
@@ -102,6 +124,32 @@
 		4E5FB05D2C17C37F004766B8 /* GenericLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericLogManager.swift; sourceTree = "<group>"; };
 		4E5FB05F2C17EAB0004766B8 /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
 		4E5FB0612C17F48A004766B8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB0632C17F8B4004766B8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E5FB06A2C180E5C004766B8 /* Reqres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reqres.swift; sourceTree = "<group>"; };
+		4E5FB0872C182160004766B8 /* CredentialError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialError.swift; sourceTree = "<group>"; };
+		4E5FB0882C182160004766B8 /* CredentialSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialSecurity.swift; sourceTree = "<group>"; };
+		4E5FB08A2C182160004766B8 /* CredentialCoordinatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialCoordinatorImpl.swift; sourceTree = "<group>"; };
+		4E5FB08B2C182160004766B8 /* CredentialSecurity+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CredentialSecurity+Internal.swift"; sourceTree = "<group>"; };
+		4E5FB08C2C182160004766B8 /* DefaultCredentialDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCredentialDataSource.swift; sourceTree = "<group>"; };
+		4E5FB08D2C182160004766B8 /* Credential+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Credential+Internal.swift"; sourceTree = "<group>"; };
+		4E5FB08E2C182161004766B8 /* CredentialDataSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CredentialDataSource+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB08F2C182161004766B8 /* CredentialCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialCoordinator.swift; sourceTree = "<group>"; };
+		4E5FB0902C182161004766B8 /* CredentialDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialDataSource.swift; sourceTree = "<group>"; };
+		4E5FB0912C182161004766B8 /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		4E5FB0922C182162004766B8 /* CredentialDataSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialDataSourceDelegate.swift; sourceTree = "<group>"; };
+		4E5FB0932C182162004766B8 /* Credential+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Credential+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB0A02C1822AE004766B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4E5FB0A32C182393004766B8 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		4E5FB0A52C18244E004766B8 /* Reqres+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reqres+Auth.swift"; sourceTree = "<group>"; };
+		4E5FB0A72C18253A004766B8 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB0A92C182657004766B8 /* APIClient+Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Requests.swift"; sourceTree = "<group>"; };
+		4E5FB0AB2C182A18004766B8 /* APIClient+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+Operations.swift"; sourceTree = "<group>"; };
+		51BDC67CC41205002647C2EE /* Pods-GenericSwiftSDKWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapper.release.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapper/Pods-GenericSwiftSDKWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		61C88B6576240C067564CB05 /* Pods-GenericSwiftSDKWrapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapperTests.release.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapperTests/Pods-GenericSwiftSDKWrapperTests.release.xcconfig"; sourceTree = "<group>"; };
+		67DE43919460FBAE4929A79A /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.release.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		943B14C05723BC97C6EA6532 /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.debug.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A740EB41383D5D1C3F74545B /* Pods-GenericSwiftSDKWrapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericSwiftSDKWrapperTests.debug.xcconfig"; path = "Target Support Files/Pods-GenericSwiftSDKWrapperTests/Pods-GenericSwiftSDKWrapperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4AE2451AA644135BA3357C /* Pods_GenericSwiftSDKWrapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericSwiftSDKWrapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23F44B307D1143D3A686430 /* Pods_GenericSwiftSDKWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADE84D50936DC2DB981AA95 /* Pods_GenericSwiftSDKWrapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,19 +173,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFF473537AE38B92D0B82BD /* Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3111D14C06F72855E52A0F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				447B81CA68B7F91B4D29EA6B /* Pods-GenericSwiftSDKWrapper.debug.xcconfig */,
+				51BDC67CC41205002647C2EE /* Pods-GenericSwiftSDKWrapper.release.xcconfig */,
+				943B14C05723BC97C6EA6532 /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.debug.xcconfig */,
+				67DE43919460FBAE4929A79A /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.release.xcconfig */,
+				A740EB41383D5D1C3F74545B /* Pods-GenericSwiftSDKWrapperTests.debug.xcconfig */,
+				61C88B6576240C067564CB05 /* Pods-GenericSwiftSDKWrapperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4E36F7E82C128CE3005EE976 = {
 			isa = PBXGroup;
 			children = (
+				4E5FB0632C17F8B4004766B8 /* Podfile */,
 				4E36F7F32C128CE3005EE976 /* GenericSwiftSDKWrapper */,
 				4E36F8042C128CE5005EE976 /* GenericSwiftSDKWrapperTests */,
 				4E36F80E2C128CE5005EE976 /* GenericSwiftSDKWrapperUITests */,
 				4E36F7F22C128CE3005EE976 /* Products */,
+				3111D14C06F72855E52A0F64 /* Pods */,
+				B5FE32E02B04F8EA0BC5925A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,17 +219,18 @@
 		4E36F7F32C128CE3005EE976 /* GenericSwiftSDKWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				4E5FB0552C17C1F6004766B8 /* Logging */,
-				4E5FB0522C17BCED004766B8 /* Endpoints */,
-				4E5FB0412C17ADEC004766B8 /* Utilities */,
+				4E5FB0A22C182385004766B8 /* Version */,
+				4E5FB0862C182131004766B8 /* UserManagement */,
 				4E5FB0352C17211E004766B8 /* Samples */,
-				4E5FB0312C172072004766B8 /* TokenManagement */,
+				4E5FB0552C17C1F6004766B8 /* Logging */,
+				4E5FB0412C17ADEC004766B8 /* Utilities */,
 				4E5FB0032C1718A3004766B8 /* Security */,
 				4E5FB0022C171891004766B8 /* Network */,
 				4E36F7F42C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift */,
 				4E36F7F62C128CE3005EE976 /* ContentView.swift */,
 				4E36F7F82C128CE5005EE976 /* Assets.xcassets */,
 				4E36F7FA2C128CE5005EE976 /* Preview Content */,
+				4E5FB0A02C1822AE004766B8 /* README.md */,
 			);
 			path = GenericSwiftSDKWrapper;
 			sourceTree = "<group>";
@@ -195,15 +263,13 @@
 		4E5FB0022C171891004766B8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4E5FB0082C171C47004766B8 /* APIClient.swift */,
-				4E5FB0052C171B98004766B8 /* GenericAPIError.swift */,
-				4E5FB00A2C171C57004766B8 /* APIClientError.swift */,
-				4E5FB00C2C171C75004766B8 /* APIRequest.swift */,
-				4E5FB00E2C171C94004766B8 /* APIRequestArguments.swift */,
+				4E5FB0AF2C182AB8004766B8 /* APIError */,
+				4E5FB0AE2C182A9D004766B8 /* APIRequest */,
+				4E5FB0AD2C182A83004766B8 /* APIClient */,
 				4E5FB0102C171CC0004766B8 /* APIResponse.swift */,
 				4E5FB0122C171CF4004766B8 /* URLSessionProtocol.swift */,
 				4E5FB0502C17BBDF004766B8 /* APIRateLimit.swift */,
-				4E5FB0042C171B6E004766B8 /* New Group */,
+				4E5FB0A72C18253A004766B8 /* URLRequest+Extensions.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -216,13 +282,6 @@
 				4E5FB0262C171E62004766B8 /* KeychainError.swift */,
 			);
 			path = Security;
-			sourceTree = "<group>";
-		};
-		4E5FB0042C171B6E004766B8 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		4E5FB0072C171C10004766B8 /* Oauth2 */ = {
@@ -242,26 +301,10 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
-		4E5FB0312C172072004766B8 /* TokenManagement */ = {
-			isa = PBXGroup;
-			children = (
-				4E5FB0322C172080004766B8 /* Internal */,
-			);
-			path = TokenManagement;
-			sourceTree = "<group>";
-		};
-		4E5FB0322C172080004766B8 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */,
-				4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
 		4E5FB0352C17211E004766B8 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				4E5FB0692C180E48004766B8 /* Reqres */,
 				4E5FB0402C17AD8F004766B8 /* GoogleSignIn */,
 				4E5FB0072C171C10004766B8 /* Oauth2 */,
 			);
@@ -310,6 +353,89 @@
 			path = Logging;
 			sourceTree = "<group>";
 		};
+		4E5FB0692C180E48004766B8 /* Reqres */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0522C17BCED004766B8 /* Endpoints */,
+				4E5FB06A2C180E5C004766B8 /* Reqres.swift */,
+				4E5FB0A52C18244E004766B8 /* Reqres+Auth.swift */,
+			);
+			path = Reqres;
+			sourceTree = "<group>";
+		};
+		4E5FB0862C182131004766B8 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0892C182160004766B8 /* Internal */,
+				4E5FB0912C182161004766B8 /* Credential.swift */,
+				4E5FB0932C182162004766B8 /* Credential+Extensions.swift */,
+				4E5FB08F2C182161004766B8 /* CredentialCoordinator.swift */,
+				4E5FB0902C182161004766B8 /* CredentialDataSource.swift */,
+				4E5FB08E2C182161004766B8 /* CredentialDataSource+Extensions.swift */,
+				4E5FB0922C182162004766B8 /* CredentialDataSourceDelegate.swift */,
+				4E5FB0872C182160004766B8 /* CredentialError.swift */,
+				4E5FB0882C182160004766B8 /* CredentialSecurity.swift */,
+			);
+			path = UserManagement;
+			sourceTree = "<group>";
+		};
+		4E5FB0892C182160004766B8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB08A2C182160004766B8 /* CredentialCoordinatorImpl.swift */,
+				4E5FB08B2C182160004766B8 /* CredentialSecurity+Internal.swift */,
+				4E5FB08C2C182160004766B8 /* DefaultCredentialDataSource.swift */,
+				4E5FB08D2C182160004766B8 /* Credential+Internal.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		4E5FB0A22C182385004766B8 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0A32C182393004766B8 /* Version.swift */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
+		4E5FB0AD2C182A83004766B8 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB00A2C171C57004766B8 /* APIClientError.swift */,
+				4E5FB0082C171C47004766B8 /* APIClient.swift */,
+				4E5FB0A92C182657004766B8 /* APIClient+Requests.swift */,
+				4E5FB0AB2C182A18004766B8 /* APIClient+Operations.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		4E5FB0AE2C182A9D004766B8 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB00C2C171C75004766B8 /* APIRequest.swift */,
+				4E5FB00E2C171C94004766B8 /* APIRequestArguments.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		4E5FB0AF2C182AB8004766B8 /* APIError */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0052C171B98004766B8 /* GenericAPIError.swift */,
+			);
+			path = APIError;
+			sourceTree = "<group>";
+		};
+		B5FE32E02B04F8EA0BC5925A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28DCCF3AA13545AF5329B20A /* Pods_GenericSwiftSDKWrapper.framework */,
+				486DD597D9D3C92909500334 /* Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests.framework */,
+				CB4AE2451AA644135BA3357C /* Pods_GenericSwiftSDKWrapperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,9 +443,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E36F8152C128CE5005EE976 /* Build configuration list for PBXNativeTarget "GenericSwiftSDKWrapper" */;
 			buildPhases = (
+				A15ED4DC1F8F87916E06FE30 /* [CP] Check Pods Manifest.lock */,
 				4E36F7ED2C128CE3005EE976 /* Sources */,
 				4E36F7EE2C128CE3005EE976 /* Frameworks */,
 				4E36F7EF2C128CE3005EE976 /* Resources */,
+				EE354CA937FD855A01DE6607 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +462,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E36F8182C128CE5005EE976 /* Build configuration list for PBXNativeTarget "GenericSwiftSDKWrapperTests" */;
 			buildPhases = (
+				2AFEAB408ACC13DD20CDFE92 /* [CP] Check Pods Manifest.lock */,
 				4E36F7FD2C128CE5005EE976 /* Sources */,
 				4E36F7FE2C128CE5005EE976 /* Frameworks */,
 				4E36F7FF2C128CE5005EE976 /* Resources */,
@@ -352,9 +481,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E36F81B2C128CE5005EE976 /* Build configuration list for PBXNativeTarget "GenericSwiftSDKWrapperUITests" */;
 			buildPhases = (
+				77D44496971D6E0A8F99E641 /* [CP] Check Pods Manifest.lock */,
 				4E36F8072C128CE5005EE976 /* Sources */,
 				4E36F8082C128CE5005EE976 /* Frameworks */,
 				4E36F8092C128CE5005EE976 /* Resources */,
+				440CD4E2854B704F62614765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5FB0642C17F8B5004766B8 /* Podfile in Resources */,
 				4E36F7FC2C128CE5005EE976 /* Preview Assets.xcassets in Resources */,
 				4E36F7F92C128CE5005EE976 /* Assets.xcassets in Resources */,
 			);
@@ -435,42 +567,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AFEAB408ACC13DD20CDFE92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericSwiftSDKWrapperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		440CD4E2854B704F62614765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D44496971D6E0A8F99E641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15ED4DC1F8F87916E06FE30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericSwiftSDKWrapper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE354CA937FD855A01DE6607 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper/Pods-GenericSwiftSDKWrapper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper/Pods-GenericSwiftSDKWrapper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenericSwiftSDKWrapper/Pods-GenericSwiftSDKWrapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E36F7ED2C128CE3005EE976 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4E5FB0132C171CF4004766B8 /* URLSessionProtocol.swift in Sources */,
+				4E5FB0A82C18253A004766B8 /* URLRequest+Extensions.swift in Sources */,
+				4E5FB09A2C182162004766B8 /* CredentialDataSource+Extensions.swift in Sources */,
 				4E5FB0602C17EAB0004766B8 /* EndpointProvider.swift in Sources */,
-				4E5FB0342C1720A2004766B8 /* KeychainTokenStorage.swift in Sources */,
 				4E5FB05E2C17C37F004766B8 /* GenericLogManager.swift in Sources */,
 				4E36F7F72C128CE3005EE976 /* ContentView.swift in Sources */,
+				4E5FB0A62C18244E004766B8 /* Reqres+Auth.swift in Sources */,
 				4E5FB0432C17AE09004766B8 /* JSONCoding.swift in Sources */,
 				4E5FB04D2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift in Sources */,
+				4E5FB0952C182162004766B8 /* CredentialSecurity.swift in Sources */,
+				4E5FB0992C182162004766B8 /* Credential+Internal.swift in Sources */,
 				4E5FB0572C17C20D004766B8 /* LogHandler.swift in Sources */,
+				4E5FB0A42C182393004766B8 /* Version.swift in Sources */,
+				4E5FB0AC2C182A18004766B8 /* APIClient+Operations.swift in Sources */,
 				4E5FB00F2C171C94004766B8 /* APIRequestArguments.swift in Sources */,
 				4E5FB0472C17AE42004766B8 /* JSONValue.swift in Sources */,
 				4E5FB02B2C171E81004766B8 /* KeyChain+Extensions.swift in Sources */,
 				4E5FB04F2C17B3A6004766B8 /* GoogleSignIn.swift in Sources */,
+				4E5FB0982C182162004766B8 /* DefaultCredentialDataSource.swift in Sources */,
 				4E5FB0062C171B98004766B8 /* GenericAPIError.swift in Sources */,
-				4E5FB0382C1721C5004766B8 /* UserDefaultsTokenStorage.swift in Sources */,
 				4E5FB0252C171E55004766B8 /* KeyChain.swift in Sources */,
 				4E5FB0452C17AE16004766B8 /* JSONDecodable.swift in Sources */,
 				4E36F7F52C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift in Sources */,
+				4E5FB0942C182162004766B8 /* CredentialError.swift in Sources */,
 				4E5FB0492C17AE9F004766B8 /* Expires.swift in Sources */,
 				4E5FB0272C171E62004766B8 /* KeychainError.swift in Sources */,
+				4E5FB09D2C182162004766B8 /* Credential.swift in Sources */,
 				4E5FB0592C17C255004766B8 /* DateFormatter+Extensions.swift in Sources */,
 				4E5FB00B2C171C58004766B8 /* APIClientError.swift in Sources */,
 				4E5FB0112C171CC0004766B8 /* APIResponse.swift in Sources */,
+				4E5FB0A12C1822AE004766B8 /* README.md in Sources */,
+				4E5FB09B2C182162004766B8 /* CredentialCoordinator.swift in Sources */,
 				4E5FB0512C17BBDF004766B8 /* APIRateLimit.swift in Sources */,
 				4E5FB05B2C17C2C3004766B8 /* DateExtensions.swift in Sources */,
 				4E5FB00D2C171C75004766B8 /* APIRequest.swift in Sources */,
+				4E5FB0962C182162004766B8 /* CredentialCoordinatorImpl.swift in Sources */,
+				4E5FB06B2C180E5C004766B8 /* Reqres.swift in Sources */,
+				4E5FB09C2C182162004766B8 /* CredentialDataSource.swift in Sources */,
 				4E5FB04B2C17AF2A004766B8 /* Dictionary+Extensions.swift in Sources */,
 				4E5FB0092C171C47004766B8 /* APIClient.swift in Sources */,
+				4E5FB09E2C182162004766B8 /* CredentialDataSourceDelegate.swift in Sources */,
+				4E5FB09F2C182162004766B8 /* Credential+Extensions.swift in Sources */,
 				4E5FB0292C171E73004766B8 /* KeyChainProtocol.swift in Sources */,
 				4E5FB0622C17F48A004766B8 /* String+Extensions.swift in Sources */,
+				4E5FB0AA2C182657004766B8 /* APIClient+Requests.swift in Sources */,
 				4E5FB0302C172016004766B8 /* Oauth2Client.swift in Sources */,
 				4E5FB0542C17BFF8004766B8 /* MiscenalleousUtilities.swift in Sources */,
+				4E5FB0972C182162004766B8 /* CredentialSecurity+Internal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +875,7 @@
 		};
 		4E36F8162C128CE5005EE976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447B81CA68B7F91B4D29EA6B /* Pods-GenericSwiftSDKWrapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -651,6 +904,7 @@
 		};
 		4E36F8172C128CE5005EE976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BDC67CC41205002647C2EE /* Pods-GenericSwiftSDKWrapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -679,6 +933,7 @@
 		};
 		4E36F8192C128CE5005EE976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A740EB41383D5D1C3F74545B /* Pods-GenericSwiftSDKWrapperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -698,6 +953,7 @@
 		};
 		4E36F81A2C128CE5005EE976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C88B6576240C067564CB05 /* Pods-GenericSwiftSDKWrapperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,6 +973,7 @@
 		};
 		4E36F81C2C128CE5005EE976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943B14C05723BC97C6EA6532 /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -734,6 +991,7 @@
 		};
 		4E36F81D2C128CE5005EE976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67DE43919460FBAE4929A79A /* Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

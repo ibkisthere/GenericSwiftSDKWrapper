@@ -1,21 +1,22 @@
 
 
 import Foundation
+
 //import Logging
 
 /**
- The logging backend for this library.
+ The logging backend for this SDK
  
  See [swift-log][1].
  
  [1]: https://github.com/apple/swift-log
  */
-public struct SpotifyAPILogHandler: LogHandler {
+public struct GenericAPILogHandler: LogHandler {
 
     private static var handlerIsInitialized = false
     
     private static let initializeHandlerDispatchQueue = DispatchQueue(
-        label: "SpotifyAPI.SpotifyAPILogHandler.initializeHandler"
+        label: "GenericSwiftSDK.GenericSwiftSDKLogHandler.initializeHandler"
     )
     
     /**

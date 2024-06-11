@@ -6,7 +6,9 @@ target 'GenericSwiftSDKWrapper' do
   use_frameworks!
 
   # Pods for GenericSwiftSDKWrapper
-
+     pod 'GoogleSignIn'
+     pod 'GoogleSignInSwiftSupport'
+     pod 'Crypto'
   target 'GenericSwiftSDKWrapperTests' do
     inherit! :search_paths
     # Pods for testing

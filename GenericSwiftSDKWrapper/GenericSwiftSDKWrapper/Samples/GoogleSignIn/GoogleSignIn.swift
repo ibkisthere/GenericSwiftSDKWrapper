@@ -7,21 +7,30 @@
 
 
 import SwiftUI
+import GoogleSignInSwift
 
 struct GoogleSignInView: View {
     
-    GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
-        guard error == nil else { return }
-        guard let signInResult = signInResult else { return }
+    func googleSignIn() {
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) {
+           signInResult, error in
+           guard error == nil else { return }
+           guard let signInResult = signInResult else { return }
 
-        signInResult.user.refreshTokensIfNeeded { user, error in
-            guard error == nil else { return }
-            guard let user = user else { return }
+           signInResult.user.refreshTokensIfNeeded { user, error in
+               guard error == nil else { return }
+               guard let user = user else { return }
 
-            let idToken = user.idToken
-            // Send ID token to backend (example below).
-        }
+               let idToken = user.idToken
+               
+               //use our ApiClient to receive the idToken then send to our backend
+           }
+       }
     }
+    
+    //When we get token we save the token locally
+    // if token is expired , we refresh
+    // then replace the token
     
     func tokenSignInExample(idToken: String) {
         // rewrite it to use our SDK methods
@@ -40,7 +49,7 @@ struct GoogleSignInView: View {
     }
     
     func tokenSignOutExample() {
-//        revoke the tokens assigned to the user , and change state
+        // revoke the tokens assigned to the user , and change state
         //clear keychain 
     }
     
@@ -58,6 +67,6 @@ struct GoogleSignInView: View {
 
 struct GoogleSignInView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GoogleSignInView()
     }
 }

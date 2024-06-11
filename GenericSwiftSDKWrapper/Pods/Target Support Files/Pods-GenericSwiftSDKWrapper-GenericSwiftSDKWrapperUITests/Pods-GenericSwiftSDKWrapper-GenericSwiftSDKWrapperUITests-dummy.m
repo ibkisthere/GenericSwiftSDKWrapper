@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests : NSObject
+@end
+@implementation PodsDummy_Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests
+@end

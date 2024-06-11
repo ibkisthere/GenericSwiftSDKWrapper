@@ -14,6 +14,35 @@
 		4E36F8062C128CE5005EE976 /* GenericSwiftSDKWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36F8052C128CE5005EE976 /* GenericSwiftSDKWrapperTests.swift */; };
 		4E36F8102C128CE5005EE976 /* GenericSwiftSDKWrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36F80F2C128CE5005EE976 /* GenericSwiftSDKWrapperUITests.swift */; };
 		4E36F8122C128CE5005EE976 /* GenericSwiftSDKWrapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E36F8112C128CE5005EE976 /* GenericSwiftSDKWrapperUITestsLaunchTests.swift */; };
+		4E5FB0062C171B98004766B8 /* GenericAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0052C171B98004766B8 /* GenericAPIError.swift */; };
+		4E5FB0092C171C47004766B8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0082C171C47004766B8 /* APIClient.swift */; };
+		4E5FB00B2C171C58004766B8 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB00A2C171C57004766B8 /* APIClientError.swift */; };
+		4E5FB00D2C171C75004766B8 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB00C2C171C75004766B8 /* APIRequest.swift */; };
+		4E5FB00F2C171C94004766B8 /* APIRequestArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB00E2C171C94004766B8 /* APIRequestArguments.swift */; };
+		4E5FB0112C171CC0004766B8 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0102C171CC0004766B8 /* APIResponse.swift */; };
+		4E5FB0132C171CF4004766B8 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0122C171CF4004766B8 /* URLSessionProtocol.swift */; };
+		4E5FB0252C171E55004766B8 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0242C171E55004766B8 /* KeyChain.swift */; };
+		4E5FB0272C171E62004766B8 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0262C171E62004766B8 /* KeychainError.swift */; };
+		4E5FB0292C171E73004766B8 /* KeyChainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0282C171E73004766B8 /* KeyChainProtocol.swift */; };
+		4E5FB02B2C171E81004766B8 /* KeyChain+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB02A2C171E81004766B8 /* KeyChain+Extensions.swift */; };
+		4E5FB0302C172016004766B8 /* Oauth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB02F2C172016004766B8 /* Oauth2Client.swift */; };
+		4E5FB0342C1720A2004766B8 /* KeychainTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */; };
+		4E5FB0382C1721C5004766B8 /* UserDefaultsTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */; };
+		4E5FB0432C17AE09004766B8 /* JSONCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0422C17AE09004766B8 /* JSONCoding.swift */; };
+		4E5FB0452C17AE16004766B8 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0442C17AE16004766B8 /* JSONDecodable.swift */; };
+		4E5FB0472C17AE42004766B8 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0462C17AE42004766B8 /* JSONValue.swift */; };
+		4E5FB0492C17AE9F004766B8 /* Expires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0482C17AE9F004766B8 /* Expires.swift */; };
+		4E5FB04B2C17AF2A004766B8 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB04A2C17AF2A004766B8 /* Dictionary+Extensions.swift */; };
+		4E5FB04D2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB04C2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift */; };
+		4E5FB04F2C17B3A6004766B8 /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB04E2C17B3A6004766B8 /* GoogleSignIn.swift */; };
+		4E5FB0512C17BBDF004766B8 /* APIRateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0502C17BBDF004766B8 /* APIRateLimit.swift */; };
+		4E5FB0542C17BFF8004766B8 /* MiscenalleousUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0532C17BFF7004766B8 /* MiscenalleousUtilities.swift */; };
+		4E5FB0572C17C20D004766B8 /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0562C17C20D004766B8 /* LogHandler.swift */; };
+		4E5FB0592C17C255004766B8 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0582C17C255004766B8 /* DateFormatter+Extensions.swift */; };
+		4E5FB05B2C17C2C3004766B8 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB05A2C17C2C3004766B8 /* DateExtensions.swift */; };
+		4E5FB05E2C17C37F004766B8 /* GenericLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB05D2C17C37F004766B8 /* GenericLogManager.swift */; };
+		4E5FB0602C17EAB0004766B8 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB05F2C17EAB0004766B8 /* EndpointProvider.swift */; };
+		4E5FB0622C17F48A004766B8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FB0612C17F48A004766B8 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +73,35 @@
 		4E36F80B2C128CE5005EE976 /* GenericSwiftSDKWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericSwiftSDKWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E36F80F2C128CE5005EE976 /* GenericSwiftSDKWrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSwiftSDKWrapperUITests.swift; sourceTree = "<group>"; };
 		4E36F8112C128CE5005EE976 /* GenericSwiftSDKWrapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSwiftSDKWrapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E5FB0052C171B98004766B8 /* GenericAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericAPIError.swift; sourceTree = "<group>"; };
+		4E5FB0082C171C47004766B8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4E5FB00A2C171C57004766B8 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		4E5FB00C2C171C75004766B8 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		4E5FB00E2C171C94004766B8 /* APIRequestArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestArguments.swift; sourceTree = "<group>"; };
+		4E5FB0102C171CC0004766B8 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		4E5FB0122C171CF4004766B8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		4E5FB0242C171E55004766B8 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		4E5FB0262C171E62004766B8 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		4E5FB0282C171E73004766B8 /* KeyChainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainProtocol.swift; sourceTree = "<group>"; };
+		4E5FB02A2C171E81004766B8 /* KeyChain+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyChain+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB02F2C172016004766B8 /* Oauth2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth2Client.swift; sourceTree = "<group>"; };
+		4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStorage.swift; sourceTree = "<group>"; };
+		4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTokenStorage.swift; sourceTree = "<group>"; };
+		4E5FB0422C17AE09004766B8 /* JSONCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCoding.swift; sourceTree = "<group>"; };
+		4E5FB0442C17AE16004766B8 /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		4E5FB0462C17AE42004766B8 /* JSONValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		4E5FB0482C17AE9F004766B8 /* Expires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expires.swift; sourceTree = "<group>"; };
+		4E5FB04A2C17AF2A004766B8 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB04C2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalValueCodingKeys.swift; sourceTree = "<group>"; };
+		4E5FB04E2C17B3A6004766B8 /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
+		4E5FB0502C17BBDF004766B8 /* APIRateLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRateLimit.swift; sourceTree = "<group>"; };
+		4E5FB0532C17BFF7004766B8 /* MiscenalleousUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscenalleousUtilities.swift; sourceTree = "<group>"; };
+		4E5FB0562C17C20D004766B8 /* LogHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHandler.swift; sourceTree = "<group>"; };
+		4E5FB0582C17C255004766B8 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		4E5FB05A2C17C2C3004766B8 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		4E5FB05D2C17C37F004766B8 /* GenericLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericLogManager.swift; sourceTree = "<group>"; };
+		4E5FB05F2C17EAB0004766B8 /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		4E5FB0612C17F48A004766B8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +152,13 @@
 		4E36F7F32C128CE3005EE976 /* GenericSwiftSDKWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				4E5FB0552C17C1F6004766B8 /* Logging */,
+				4E5FB0522C17BCED004766B8 /* Endpoints */,
+				4E5FB0412C17ADEC004766B8 /* Utilities */,
+				4E5FB0352C17211E004766B8 /* Samples */,
+				4E5FB0312C172072004766B8 /* TokenManagement */,
+				4E5FB0032C1718A3004766B8 /* Security */,
+				4E5FB0022C171891004766B8 /* Network */,
 				4E36F7F42C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift */,
 				4E36F7F62C128CE3005EE976 /* ContentView.swift */,
 				4E36F7F82C128CE5005EE976 /* Assets.xcassets */,
@@ -125,6 +190,124 @@
 				4E36F8112C128CE5005EE976 /* GenericSwiftSDKWrapperUITestsLaunchTests.swift */,
 			);
 			path = GenericSwiftSDKWrapperUITests;
+			sourceTree = "<group>";
+		};
+		4E5FB0022C171891004766B8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0082C171C47004766B8 /* APIClient.swift */,
+				4E5FB0052C171B98004766B8 /* GenericAPIError.swift */,
+				4E5FB00A2C171C57004766B8 /* APIClientError.swift */,
+				4E5FB00C2C171C75004766B8 /* APIRequest.swift */,
+				4E5FB00E2C171C94004766B8 /* APIRequestArguments.swift */,
+				4E5FB0102C171CC0004766B8 /* APIResponse.swift */,
+				4E5FB0122C171CF4004766B8 /* URLSessionProtocol.swift */,
+				4E5FB0502C17BBDF004766B8 /* APIRateLimit.swift */,
+				4E5FB0042C171B6E004766B8 /* New Group */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4E5FB0032C1718A3004766B8 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB02E2C171E9D004766B8 /* Internal */,
+				4E5FB0242C171E55004766B8 /* KeyChain.swift */,
+				4E5FB0262C171E62004766B8 /* KeychainError.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		4E5FB0042C171B6E004766B8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4E5FB0072C171C10004766B8 /* Oauth2 */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB02F2C172016004766B8 /* Oauth2Client.swift */,
+			);
+			path = Oauth2;
+			sourceTree = "<group>";
+		};
+		4E5FB02E2C171E9D004766B8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB02A2C171E81004766B8 /* KeyChain+Extensions.swift */,
+				4E5FB0282C171E73004766B8 /* KeyChainProtocol.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		4E5FB0312C172072004766B8 /* TokenManagement */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0322C172080004766B8 /* Internal */,
+			);
+			path = TokenManagement;
+			sourceTree = "<group>";
+		};
+		4E5FB0322C172080004766B8 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0332C1720A2004766B8 /* KeychainTokenStorage.swift */,
+				4E5FB0372C1721C5004766B8 /* UserDefaultsTokenStorage.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		4E5FB0352C17211E004766B8 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0402C17AD8F004766B8 /* GoogleSignIn */,
+				4E5FB0072C171C10004766B8 /* Oauth2 */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		4E5FB0402C17AD8F004766B8 /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB04E2C17B3A6004766B8 /* GoogleSignIn.swift */,
+			);
+			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		4E5FB0412C17ADEC004766B8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0422C17AE09004766B8 /* JSONCoding.swift */,
+				4E5FB0442C17AE16004766B8 /* JSONDecodable.swift */,
+				4E5FB0462C17AE42004766B8 /* JSONValue.swift */,
+				4E5FB0482C17AE9F004766B8 /* Expires.swift */,
+				4E5FB04A2C17AF2A004766B8 /* Dictionary+Extensions.swift */,
+				4E5FB04C2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift */,
+				4E5FB0532C17BFF7004766B8 /* MiscenalleousUtilities.swift */,
+				4E5FB0582C17C255004766B8 /* DateFormatter+Extensions.swift */,
+				4E5FB05A2C17C2C3004766B8 /* DateExtensions.swift */,
+				4E5FB0612C17F48A004766B8 /* String+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4E5FB0522C17BCED004766B8 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB05F2C17EAB0004766B8 /* EndpointProvider.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		4E5FB0552C17C1F6004766B8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				4E5FB0562C17C20D004766B8 /* LogHandler.swift */,
+				4E5FB05D2C17C37F004766B8 /* GenericLogManager.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +440,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5FB0132C171CF4004766B8 /* URLSessionProtocol.swift in Sources */,
+				4E5FB0602C17EAB0004766B8 /* EndpointProvider.swift in Sources */,
+				4E5FB0342C1720A2004766B8 /* KeychainTokenStorage.swift in Sources */,
+				4E5FB05E2C17C37F004766B8 /* GenericLogManager.swift in Sources */,
 				4E36F7F72C128CE3005EE976 /* ContentView.swift in Sources */,
+				4E5FB0432C17AE09004766B8 /* JSONCoding.swift in Sources */,
+				4E5FB04D2C17AF7F004766B8 /* AdditionalValueCodingKeys.swift in Sources */,
+				4E5FB0572C17C20D004766B8 /* LogHandler.swift in Sources */,
+				4E5FB00F2C171C94004766B8 /* APIRequestArguments.swift in Sources */,
+				4E5FB0472C17AE42004766B8 /* JSONValue.swift in Sources */,
+				4E5FB02B2C171E81004766B8 /* KeyChain+Extensions.swift in Sources */,
+				4E5FB04F2C17B3A6004766B8 /* GoogleSignIn.swift in Sources */,
+				4E5FB0062C171B98004766B8 /* GenericAPIError.swift in Sources */,
+				4E5FB0382C1721C5004766B8 /* UserDefaultsTokenStorage.swift in Sources */,
+				4E5FB0252C171E55004766B8 /* KeyChain.swift in Sources */,
+				4E5FB0452C17AE16004766B8 /* JSONDecodable.swift in Sources */,
 				4E36F7F52C128CE3005EE976 /* GenericSwiftSDKWrapperApp.swift in Sources */,
+				4E5FB0492C17AE9F004766B8 /* Expires.swift in Sources */,
+				4E5FB0272C171E62004766B8 /* KeychainError.swift in Sources */,
+				4E5FB0592C17C255004766B8 /* DateFormatter+Extensions.swift in Sources */,
+				4E5FB00B2C171C58004766B8 /* APIClientError.swift in Sources */,
+				4E5FB0112C171CC0004766B8 /* APIResponse.swift in Sources */,
+				4E5FB0512C17BBDF004766B8 /* APIRateLimit.swift in Sources */,
+				4E5FB05B2C17C2C3004766B8 /* DateExtensions.swift in Sources */,
+				4E5FB00D2C171C75004766B8 /* APIRequest.swift in Sources */,
+				4E5FB04B2C17AF2A004766B8 /* Dictionary+Extensions.swift in Sources */,
+				4E5FB0092C171C47004766B8 /* APIClient.swift in Sources */,
+				4E5FB0292C171E73004766B8 /* KeyChainProtocol.swift in Sources */,
+				4E5FB0622C17F48A004766B8 /* String+Extensions.swift in Sources */,
+				4E5FB0302C172016004766B8 /* Oauth2Client.swift in Sources */,
+				4E5FB0542C17BFF8004766B8 /* MiscenalleousUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

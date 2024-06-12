@@ -228,7 +228,7 @@ extension APIRequest {
         return request
     }
     
-    /// use completion handlers to send the request to the client
+    /// use completion handlers to send the request to the client  the client now sends the request to the server
     public func send(to client: APIClient, parsing context: APIParsingContext? = nil, completion: @escaping(Result<APIResponse<ResponseType>, APIClientError>) -> Void) {
         do {
             let urlRequest = try request(for: client)

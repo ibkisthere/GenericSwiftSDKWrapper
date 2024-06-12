@@ -41,7 +41,7 @@ extension APIClient {
                          completion: @escaping (Result<APIResponse<T>, APIClientError>) -> Void) {
         var urlRequest = request
         willSend(request: &urlRequest)
-        session.dataTaskWithRequest(urlRequest) { data, response, httpError in
+        URLSession.shared.dataTask(with:urlRequest) { data, response, httpError in
             guard let data = data,
                   let response = response
             else {
@@ -121,6 +121,7 @@ extension APIClient {
             } catch let error as APIClientError {
                 self.didSend(request: request, received: error, requestId: requestId, rateLimit: rateInfo)
                 completion(.failure(error))
+
             } catch {
                 let apiError = APIClientError.cannotParseResponse(error: error)
                 self.didSend(request: request, received: apiError, requestId: requestId, rateLimit: rateInfo)

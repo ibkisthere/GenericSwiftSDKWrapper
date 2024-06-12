@@ -19,18 +19,18 @@ enum AppLoggers {
         label: "apiClient", level: .critical
     )
     
-    static var apiRequesLtogger = Logger(
-        label: "AuthorizationCodeFlowManager",
+    static var apiRequestLogger = Logger(
+        label: "apiRequest",
         level: .critical
     )
 
     static var jsonDecodeLogger = Logger(
-        label: "AuthorizationCodeFlowPKCEManager",
+        label: "jsonDecode",
         level: .critical
     )
     
     static var errorLogger = Logger(
-        label: "ClientCredentialsFlowManager",
+        label: "error",
         level: .critical
     )
     

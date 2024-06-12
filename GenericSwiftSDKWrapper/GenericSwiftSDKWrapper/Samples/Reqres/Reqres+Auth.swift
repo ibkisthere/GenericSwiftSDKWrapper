@@ -11,6 +11,7 @@ import SwiftUI
 
 // this is where we will use credential.refresh and the likes
 struct ReqresAuthView: View {
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")

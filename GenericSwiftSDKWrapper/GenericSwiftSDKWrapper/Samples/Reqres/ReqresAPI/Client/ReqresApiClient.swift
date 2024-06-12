@@ -10,33 +10,31 @@ import SwiftUI
 import Logging
 
 struct ReqresApiClient : APIClient {
-    var baseURL: URL
-    
-    var session: URLSessionProtocol
-    
     func decode<T>(_ type: T.Type, from data: Data, userInfo: [CodingUserInfoKey : Any]?) throws -> T where T : Decodable {
         
+        let jsonDecoder: JSONDecoder
+        if let jsonType = type as? JSONDecodable.Type {
+            jsonDecoder = jsonType.jsonDecoder
+        } else {
+            jsonDecoder = defaultJSONDecoder
+        }
+        
+        return try jsonDecoder.decode(type, from: data)
+    }
+    
+    var baseURL:URL {
+        URL(string: "https://reqres.in")!
     }
     
     ///use this for logging
     func didSend(request: URLRequest, received error: APIClientError, requestId: String?, rateLimit: APIRateLimit?) {
-        
+        AppLoggers.apiClientLogger.log(level: .critical, "An error occurred \(error)")
     }
     
     func shouldRetry(request: URLRequest, rateLimit: APIRateLimit) -> APIRetry {
         APIRetry.retry(maximumCount: 3)
     }
-    
 }
 
 
 
-// apiRequest.send(to: client, parsing: context, completion: { result in
-//switch result {
-//case .success(let response):
-//    XCTAssertEqual(response.statusCode, 400)
-//case .failure(_):
-//    XCTFail("Did not expect the request to fail")
-//}
-//expect.fulfill()
-//})

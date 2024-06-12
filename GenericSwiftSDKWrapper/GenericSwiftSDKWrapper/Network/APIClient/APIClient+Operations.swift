@@ -36,16 +36,16 @@ extension APIClient {
         if let requestIdHeader = requestIdHeader {
             requestId = response.allHeaderFields[requestIdHeader] as? String
         }
-        
+
         var date: Date?
         if let dateString = response.allHeaderFields["Date"] as? String {
             date = httpDateFormatter.date(from: dateString)
         }
-        
+
         // swiftlint:disable force_unwrapping
         let jsonData = (data.isEmpty) ? "{}".data(using: .utf8)! : data
         // swiftlint:enable force_unwrapping
-        
+
         return APIResponse(result: try decode(T.self,
                                               from: jsonData,
                                               userInfo: context?.codingUserInfo),

@@ -14,19 +14,24 @@ import Foundation
 
 
 //create a struct that conforms to the APIRequest ,this allows us to make api calls easier
-struct ReqresApiUsers: APIRequest {
+struct ReqresApiUsersRequest: APIRequest {
     
+    //decoding type
     typealias ResponseType = UsersResponse
     
+    //url
     var url: URL {
         URL(string: Endpoints.apiBase + Endpoints.users)!
     }
+    
+    //queryParameters
     var query: [String: APIRequestArgument?]? {
         ["page":"2"]
     }
+    
 }
 
-struct ReqresApiSingleUser: APIRequest {
+struct ReqresApiSingleUserRequest: APIRequest {
     
     typealias ResponseType = User
     
@@ -35,7 +40,7 @@ struct ReqresApiSingleUser: APIRequest {
     }
 }
 
-struct ReqresApiUnkown: APIRequest {
+struct ReqresApiUnkownRequest: APIRequest {
     
     typealias ResponseType = UsersResponse
     
@@ -44,7 +49,7 @@ struct ReqresApiUnkown: APIRequest {
     }
 }
 
-struct ReqresApi: APIRequest {
+struct ReqresApiRequest: APIRequest {
     
     typealias ResponseType = User
     
@@ -54,19 +59,7 @@ struct ReqresApi: APIRequest {
 }
 
 
-struct ReqresApiCreateUser: APIRequest {
-    
-    typealias ResponseType = User
-    
-    var httpMethod: APIRequestMethod {
-        APIRequestMethod.post
-    }
-    var url: URL {
-        URL(string: Endpoints.apiBase + Endpoints.users)!
-    }
-}
-
-struct ReqresApiUpdateUser: APIRequest {
+struct ReqresApiCreateUserRequest: APIRequest {
     
     typealias ResponseType = User
     
@@ -78,8 +71,20 @@ struct ReqresApiUpdateUser: APIRequest {
     }
 }
 
+struct ReqresApiUpdateUserRequest: APIRequest {
+    
+    typealias ResponseType = User
+    
+    var httpMethod: APIRequestMethod {
+        APIRequestMethod.post
+    }
+    var url: URL {
+        URL(string: Endpoints.apiBase + Endpoints.users)!
+    }
+}
 
-struct ReqresApiUpdate_User: APIRequest {
+
+struct ReqresApiUpdate_UserRequest: APIRequest {
     
     typealias ResponseType = User
     

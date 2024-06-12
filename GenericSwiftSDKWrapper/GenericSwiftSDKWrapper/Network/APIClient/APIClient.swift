@@ -24,9 +24,6 @@ public protocol APIClient {
     /// This is used when request types may define their path as relative, and can inherit the URL they should be sent to through the client.
     var baseURL: URL { get }
     
-    /// The URLSession requests are sent through.
-    var session: URLSessionProtocol { get }
-    
     /// Any additional headers that should be added to all requests sent through this client.
     var additionalHttpHeaders: [String: String]? { get }
     

@@ -8,7 +8,7 @@
 import Foundation
 
 extension APIClient {
-    private func relatedLinks<T>(from linkHeader: String?) -> [APIResponse<T>.Link: URL] {
+    func relatedLinks<T>(from linkHeader: String?) -> [APIResponse<T>.Link: URL] {
         guard let linkHeader = linkHeader,
               let matches = linkRegex?.matches(in: linkHeader, options: [], range: NSRange(location: 0, length: linkHeader.count))
         else {
@@ -31,7 +31,7 @@ extension APIClient {
         return links
     }
     
-    private func validate<T>(data: Data, response: HTTPURLResponse, rateInfo: APIRateLimit?, parsing context: APIParsingContext? = nil) throws -> APIResponse<T> {
+    func validate<T>(data: Data, response: HTTPURLResponse, rateInfo: APIRateLimit?, parsing context: APIParsingContext? = nil) throws -> APIResponse<T> {
         var requestId: String?
         if let requestIdHeader = requestIdHeader {
             requestId = response.allHeaderFields[requestIdHeader] as? String

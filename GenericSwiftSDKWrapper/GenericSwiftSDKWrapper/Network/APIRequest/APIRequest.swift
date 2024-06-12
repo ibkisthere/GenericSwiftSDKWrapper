@@ -182,6 +182,8 @@ extension APIRequest {
     public var authorization: APIAuthorization? { nil }
 
     public func body() throws -> Data? { nil }
+    
+    /// make requests then send it to the client
     public func request(for client: APIClient) throws -> URLRequest {
         guard var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
         else {
@@ -226,6 +228,7 @@ extension APIRequest {
         return request
     }
     
+    /// use completion handlers to send the request to the client
     public func send(to client: APIClient, parsing context: APIParsingContext? = nil, completion: @escaping(Result<APIResponse<ResponseType>, APIClientError>) -> Void) {
         do {
             let urlRequest = try request(for: client)
@@ -237,6 +240,7 @@ extension APIRequest {
         }
     }
     
+    /// if the swift version support async await , then use it to make the request
     #if swift(>=5.5.1)
     @available(iOS 13.0, tvOS 13.0, macOS 10.15, watchOS 6, *)
     public func send(to client: APIClient, parsing context: APIParsingContext? = nil) async throws -> APIResponse<ResponseType> {
@@ -284,3 +288,26 @@ extension APIContentType {
         }
     }
 }
+
+
+
+////   /// Logs general messages for this class.
+//public var logger = Logger(label: "SpotifyAPI", level: .critical)
+//
+///**
+// Logs messages when the authorization information changes.
+//
+// Logs a message when the any of the following publishers emit a signal:
+//
+//
+// Also logs a message in the didSet observer of
+// ``SpotifyAPI/authorizationManager``.
+// */
+//public var authDidChangeLogger = Logger(
+//    label: "authDidChange", level: .critical
+//)
+//
+///// Logs the URLs of the network requests made to Spotify and, if present,
+///// the body of the requests by converting the raw data to a string.
+//public var apiRequestLogger = Logger(label: "APIRequest", level: .critical)
+//

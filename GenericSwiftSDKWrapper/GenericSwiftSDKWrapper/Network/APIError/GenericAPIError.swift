@@ -22,7 +22,6 @@ public struct GenericSDKAPIError: Decodable, Error, LocalizedError, Equatable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         code = try container.decode(String.self, forKey: .code)
         summary = try container.decode(String.self, forKey: .summary)
-        link = try container.decode(String.self, forKey: .link)
         id = try container.decode(String.self, forKey: .id)
         causes = try container.decode([String].self, forKey: .causes)
     }

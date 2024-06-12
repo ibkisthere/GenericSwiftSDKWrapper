@@ -10,7 +10,7 @@ import SwiftUI
 
 
 // this is where we will use credential.refresh and the likes
-struct ReqresContentView: View {
+struct ReqresAuthView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -22,7 +22,7 @@ struct ReqresContentView: View {
     }
 }
 
-struct ReqresContentView_Previews: PreviewProvider {
+struct ReqresAuthView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

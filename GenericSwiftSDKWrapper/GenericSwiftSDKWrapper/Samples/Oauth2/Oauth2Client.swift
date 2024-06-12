@@ -25,18 +25,19 @@ struct OAuthView: View {
                 Text("You are authorized!")
             } else {
                 Button(action: {
-                    self.oauthswift.authorizeURLHandler = SafariURLHandler(viewController: UIApplication.shared.windows.first!.rootViewController!)
-                    let _ = self.oauthswift.authorize(
-                        withCallbackURL: URL(string: "YOUR_CALLBACK_URL")!,
-                        scope: "SCOPE",
-                        state: "STATE",
-                        success: { credential, response, parameters in
-                            self.isAuthorized = true
-                        },
-                        failure: { error in
-                            print(error.localizedDescription)
-                        }
-                    )
+                    
+//                    self.oauthswift.authorizeURLHandler = SafariURLHandler(viewController: UIApplication.shared.windows.first!.rootViewController!)
+//                    let _ = self.oauthswift.authorize(
+//                        withCallbackURL: URL(string: "YOUR_CALLBACK_URL")!,
+//                        scope: "SCOPE",
+//                        state: "STATE",
+//                        success: { credential, response, parameters in
+//                            self.isAuthorized = true
+//                        },
+//                        failure: { error in
+//                            print(error.localizedDescription)
+//                        }
+//                    )
                 }) {
                     Text("Authenticate")
                 }

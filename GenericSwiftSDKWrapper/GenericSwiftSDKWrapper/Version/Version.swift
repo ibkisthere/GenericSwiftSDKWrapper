@@ -8,7 +8,6 @@
 
 // Provides a mechanism for registering SDK versions and generating a user agent string that includes information about the SDKs, the system, and the device model.
 
-
 import Foundation
 
 #if canImport(UIKit)

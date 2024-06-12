@@ -5,10 +5,8 @@
 //  Created by Ibukunoluwa Akintobi on 11/06/2024.
 //
 
-
-
 import Foundation
-//import Logging
+import Logging
 
 enum AppLoggers {
     
@@ -16,27 +14,24 @@ enum AppLoggers {
      These loggers are publicly exposed though computed properties on the
      authorization managers.
      */
-
-    static var authorizationCodeFlowManagerBaseLogger = Logger(
-        label: "AuthorizationCodeFlowManagerBase",
-        level: .critical
+    
+    static var apiClientLogger = Logger(
+        label: "apiClient", level: .critical
     )
-
-
-    static var authorizationCodeFlowManagerLogger = Logger(
+    
+    static var apiRequesLtogger = Logger(
         label: "AuthorizationCodeFlowManager",
         level: .critical
     )
 
-    static var authorizationCodeFlowPKCEManagerLogger = Logger(
+    static var jsonDecodeLogger = Logger(
         label: "AuthorizationCodeFlowPKCEManager",
         level: .critical
     )
     
-    /// Publicly exposed via ``ClientCredentialsFlowBackendManager/logger``.
-    static var clientCredentialsFlowManagerLogger = Logger(
+    static var errorLogger = Logger(
         label: "ClientCredentialsFlowManager",
         level: .critical
     )
-
+    
 }

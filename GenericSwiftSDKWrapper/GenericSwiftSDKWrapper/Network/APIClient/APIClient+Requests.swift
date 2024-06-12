@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Logging
 
 extension APIClient {
+
     public var additionalHttpHeaders: [String: String]? { nil }
-    public var requestIdHeader: String? { "x-generic-api-request-id" }
+    //x-generic-api-request-id
+    public var requestIdHeader: String? { "" }
     public var userAgent: String { SDKVersion.userAgent }
     
     public func error(from data: Data) -> Error? {

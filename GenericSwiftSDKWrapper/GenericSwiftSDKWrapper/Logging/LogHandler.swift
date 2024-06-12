@@ -1,8 +1,7 @@
 
 
 import Foundation
-
-//import Logging
+import Logging
 
 /**
  The logging backend for this SDK

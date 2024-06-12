@@ -1,19 +1,25 @@
 
 
 
-//A Generic IOS Swift SDK Wrapper with useful functionalities that can be used to make other SDKs
+## A Generic IOS Swift SDK Wrapper with useful functionalities that can be used to make other SDKs
 
-//To use it to make another SDK is simply as using the methods exposed by the SDK to create wrapper functions over your APIrequests.
+Functionalities include
+
+- Provides a wrapper around making Api Requests and decoding JSON to avoid repetitive code, also with a robust error handling and retry mechanism for network calls 
+
+- Multiple Utility methods for manipulating JSON
+
+- Credential Management and Wrappers around IOS Keychain 
+
+- Some UIComponent such as a Draggable Bottom Sheet 
+
+- Logging 
 
 
-// Also has utility functions for decoding JSON , credential and token management, refreshing of tokens , IOS keychain methods , Logging , ETC
+- This project contains two sample Sample Projects to see the functionality 
 
-// Sample Projects to check out 
+- JSON Placeholder API project to see the Network Calls
+    
+- Google Sign In Project for Credential Storage 
 
-// Spotify API
 
-// Reqres API
-
-// Google Sign In
-
-// Oauth Swift 

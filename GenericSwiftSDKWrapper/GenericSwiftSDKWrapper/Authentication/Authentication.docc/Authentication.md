@@ -12,48 +12,12 @@ You can use Authentication when you want to:
 
 ## Topics
 
-### Essentials
-
-- ``Credential``
-- <doc:ManagingUserCredentials>
-
-### Token Information
-
-- ``Token``
-- ``UserInfo``
-- ``TokenInfo``
-
-### JWT and Token Verification
-
-- ``JWT``
-- ``JWK``
-- ``JWKS``
-- ``JWTClaim``
-- ``HasClaims``
-- ``JSONClaimContainer``
-- ``ClaimConvertable``
-- ``IsClaim``
-- ``Expires``
-
 ### Security
 
 - ``Keychain``
 - ``KeychainAuthenticationContext``
 - ``TokenAuthenticationContext``
 
-### Customizations
-
-- <doc:CustomizingNetworkRequests>
-- ``TimeCoordinator``
-- ``CredentialCoordinator``
-- ``CredentialDataSource``
-- ``CredentialDataSourceDelegate``
-- ``TokenStorage``
-- ``TokenStorageDelegate``
-- ``JWKValidator``
-- ``TokenHashValidator``
-- ``IDTokenValidator``
-- ``IDTokenValidatorContext``
 
 ### Networking
 
@@ -77,11 +41,7 @@ You can use Authentication when you want to:
 ### Error Types
 
 - ``APIClientError``
-- ``CredentialError``
-- ``TokenError``
-- ``JWTError``
 - ``KeychainError``
-- ``AuthenticationError``
 - ``JSONValueError``
 
 ### Versioning
@@ -90,9 +50,3 @@ You can use Authentication when you want to:
 - ``SDKVersionMigrator``
 - ``Version``
 
-### Internals and mocking
-
-- ``DelegateCollection``
-- ``UsesDelegateCollection``
-- ``URLSessionProtocol``
-- ``URLSessionDataTaskProtocol``

@@ -7,8 +7,8 @@
 
 
 import SwiftUI
-import GoogleSignInSwift
-import GoogleSignIn
+//import GoogleSignInSwift
+//import GoogleSignIn
 
 struct GoogleSignInView: View {
 
@@ -56,16 +56,7 @@ struct GoogleSignInView: View {
         //clear keychain
     }
 
-    var body: some View {
-        VStack {
-            //use SDKs Methods to fetch token and store token
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+   
 }
 
 struct GoogleSignInView_Previews: PreviewProvider {

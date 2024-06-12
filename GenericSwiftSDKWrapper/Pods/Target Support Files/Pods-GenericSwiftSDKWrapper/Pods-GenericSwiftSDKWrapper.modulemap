@@ -1,6 +1,0 @@
-framework module Pods_GenericSwiftSDKWrapper {
-  umbrella header "Pods-GenericSwiftSDKWrapper-umbrella.h"
-
-  export *
-  module * { export * }
-}

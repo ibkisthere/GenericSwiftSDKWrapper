@@ -1,6 +1,0 @@
-framework module Pods_GenericSwiftSDKWrapper_GenericSwiftSDKWrapperUITests {
-  umbrella header "Pods-GenericSwiftSDKWrapper-GenericSwiftSDKWrapperUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

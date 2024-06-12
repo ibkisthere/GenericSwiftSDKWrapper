@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import SwiftUI
 import Logging
 
-struct ReqresApiClient : APIClient {
+
+/// This is the code for the Api Client
+struct JSONPlaceholderApiClient : APIClient {
     func decode<T>(_ type: T.Type, from data: Data, userInfo: [CodingUserInfoKey : Any]?) throws -> T where T : Decodable {
         
         let jsonDecoder: JSONDecoder
@@ -23,7 +24,7 @@ struct ReqresApiClient : APIClient {
     }
     
     var baseURL:URL {
-        URL(string: "https://reqres.in")!
+        URL(string: "")!
     }
     
     ///use this for logging

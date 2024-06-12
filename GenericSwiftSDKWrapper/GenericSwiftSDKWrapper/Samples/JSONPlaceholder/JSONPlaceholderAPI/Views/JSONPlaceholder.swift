@@ -7,11 +7,18 @@ import SwiftUI
 import Combine
 
 struct ReqresContentView: View {
-    @ObservedObject var viewModel = ReqresViewModel()
+    @ObservedObject var viewModel = JSONPlaceholderViewModel()
     var body: some View {
         VStack {
                 if let response = viewModel.response {
-                        Text(response)
+                    ScrollView {
+                        VStack(spacing: 20) {
+                            ForEach(0..<10) { _ in
+                                Text(response)
+                            }
+                        }
+                    }
+                    .frame(height: 700)
                     } else if let error = viewModel.error {
                         Text(error)
                     } else {

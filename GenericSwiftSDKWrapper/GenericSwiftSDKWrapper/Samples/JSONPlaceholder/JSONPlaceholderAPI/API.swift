@@ -10,9 +10,9 @@ import Foundation
 
 
 // this class is just to list all the methods we created 
-public class ReqresAPI {
+public class JSONPlaceholderAPI {
     
-    let client = ReqresApiClient()
+    let client = JSONPlaceholderApiClient()
     
     public func getUsers () {
 //        ReqresApiUsersRequest().send(

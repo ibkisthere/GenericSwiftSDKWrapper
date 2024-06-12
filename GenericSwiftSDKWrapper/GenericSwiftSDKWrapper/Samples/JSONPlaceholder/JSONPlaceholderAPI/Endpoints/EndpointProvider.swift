@@ -6,7 +6,7 @@
 
 import Foundation
 
-///we will be using reqres.in as the Generic SDK Api to show the api client in action
+///we will be using JSONPlaceholdertypicode as the Generic SDK Api to show the api client in action
 
 public enum Endpoints {
     
@@ -19,7 +19,7 @@ public enum Endpoints {
      ""
      ```
      */
-    public static let apiBase = "https://reqres.in"
+    public static let apiBase = "https://jsonplaceholder.typicode.com/"
     
     /// The api version 1. (Commented out because the api does not have versioning)
     /// ```
@@ -30,11 +30,11 @@ public enum Endpoints {
 
     // MARK: - Authorization -
     
-    /// The path for authorizing your app with login.
+    /// The path for seeing a list of posts
     /// ```
     /// "/login"
     /// ```
-    public static let authorize = "/login"
+    public static let posts = "/posts"
     
     /**
      The path for requesting tokens. When response is successful , a token will be returned
@@ -59,13 +59,14 @@ public enum Endpoints {
 //        path: Endpoints.token
 //    )!
     
-    /**
-     The path for registering users . When response is successful , a token will be returned
-     */
-    public static let register = "/register"
+    /// the path for the list of comments
+    public static let comments = "/comments"
     
-    public static let users = "/users"
+    /// the path for the list of albums
+    public static let albums = "/albums"
     
-    public static let unknown = "/unknown"
+    /// the path for the list of photos
+    public static let photos = "/photos"
+    
     
 }

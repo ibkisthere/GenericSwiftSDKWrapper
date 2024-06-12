@@ -11,7 +11,8 @@ import SwiftUI
 struct GenericSwiftSDKWrapperApp: App {
     var body: some Scene {
         WindowGroup {
-            ReqresContentView()
+//            ReqresContentView()
+            GoogleSignInView()
         }
     }
 }

@@ -8,14 +8,14 @@
 import SwiftUI
 import Combine
 
-class ReqresViewModel: ObservableObject {
+class JSONPlaceholderViewModel: ObservableObject {
     @Published var response: String? = nil
     @Published var error: String? = nil
     
-    let client = ReqresApiClient()
+    let client = JSONPlaceholderApiClient()
     
     func fetchUsers() {
-        ReqresApiUsersRequest().send(to: client) { [weak self] result in
+        GetPosts().send(to: client) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let response):
